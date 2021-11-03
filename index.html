@@ -17,10 +17,10 @@
 
       <header class="header" id="header">
          <div class="container header__container">
-            <nav class="nav nav__left">
-               <a href="#" class="header__burger" id="burger">
+            <nav class="nav nav__left" id="nav">
+               <button href="#" class="header__burger" id="burger">
                   <i class="fas fa-bars"></i>
-               </a>
+               </button>
                <div class="menu closed" id="menu">
                   <a href="#" class="menu__close"><i class="fas fa-times"></i></a>
                   <img class="menu__logo" src="img/logo-white.png" alt="">
@@ -43,9 +43,9 @@
                      <a class="menu__social__item" href="#"><i class="fab fa-linkedin-in"></i></a>
                   </div>
                </div>
-               <a href="#" class="nav__item">Tour</a>
-               <a href="#" class="nav__item">Features</a>
-               <a href="#" class="nav__item">Pricing</a>
+               <a href="#" class="nav__item" data-scroll='#tour'>Tour</a>
+               <a href="#" class="nav__item" data-scroll='#features'>Features</a>
+               <a href="#" class="nav__item" data-scroll='#pricing'>Pricing</a>
             </nav>
             <a href="#" class="header__logo logo">
                <img src="img/logo.jpg" alt="">
@@ -102,7 +102,7 @@
 
    <hr>
 
-   <section class="section day">
+   <section class="section day" id="tour">
       <div class="container">
          <div class="day__content">
             <img src="img/day.png" alt="" class="wow animate__animated animate__fadeInLeft day__img">
@@ -135,7 +135,7 @@
       </div>
    </section>
 
-   <section class="section interface">
+   <section class="section interface" id="features">
       <h2 class="interface__title">Beautiful Interface</h2>
       <div class="interface__suptitle suptitle">Landing Screen</div>
       <div class="interface__gallery wow animate__animated animate__fadeIn">
@@ -212,7 +212,7 @@
       </div>
    </div>
 
-   <div class="plan">
+   <div class="plan" id="pricing">
       <div class="container">
          <div class="plan__content">
             <div class="plan__inner">
@@ -293,7 +293,7 @@
                   <a href="#" class="col__text">How it works?</a>
                   <a href="#" class="col__text">Meeting tools</a>
                   <a href="#" class="col__text">Live striming</a>
-                  <a href="#" class="col__text">Contat method</a>
+                  <a href="#" class="col__text">Contact method</a>
                </div>
                <div class="footer__col col">
                   <a href="#" class="col__title suptitle">About Us</a>
