@@ -209,6 +209,10 @@ hr {
   font-size: 16px;
 }
 
+.menu__close:hover {
+  color: #267df4;
+}
+
 .menu__logo {
   margin-bottom: 50px;
 }
@@ -287,13 +291,13 @@ hr {
   font-size: 16px;
 }
 
-.nav__item:hover {
-  opacity: 1;
+.nav__item.active {
   color: #267df4;
 }
 
-.nav__item--light {
-  opacity: 0.4;
+.nav__item:hover {
+  opacity: 1;
+  color: #267df4;
 }
 
 .nav .btn--blue {
@@ -301,7 +305,7 @@ hr {
   background-color: #267df4;
   border-radius: 21px;
   color: #fff;
-  padding: 8px 25px 8px 20px;
+  padding: 8px 25px 10px 20px;
 }
 
 .nav .btn--blue i {
@@ -314,7 +318,9 @@ hr {
 }
 
 .nav .btn--blue:hover {
-  color: #fff;
+  background-color: transparent;
+  color: #267df4;
+  outline: 1px solid #267df4;
 }
 
 /* Intro */
@@ -363,6 +369,15 @@ hr {
   border-left: 10px solid #26272d;
 }
 
+.intro__btn:hover {
+  background-color: #26272d;
+  color: white;
+}
+
+.intro__btn:hover .intro__btn__tri {
+  border-left: 10px solid white;
+}
+
 .intro__img {
   position: absolute;
   bottom: -310px;
@@ -409,7 +424,7 @@ hr {
 }
 
 .day {
-  padding: 125px 0 270px;
+  padding: 145px 0 240px;
 }
 
 .day__content {
@@ -451,13 +466,23 @@ hr {
   margin-left: 10px;
 }
 
+.day__btn--blue:hover {
+  background-color: #fff;
+  color: #267df4;
+  outline: 1px solid #267df4;
+}
+
 .day__btn--white {
   margin-left: 20px;
   border: 1px solid #dcdcdd;
 }
 
+.day__btn--white:hover {
+  background-color: transparent;
+}
+
 .map {
-  padding: 205px 0;
+  padding: 175px 0;
   overflow: hidden;
 }
 
@@ -499,7 +524,7 @@ hr {
 }
 
 .interface {
-  padding: 140px 0 15px;
+  padding: 120px 0 0;
   background-color: #f5f5f8;
   text-align: center;
 }
@@ -552,7 +577,7 @@ hr {
 }
 
 .get {
-  padding: 75px 0 130px;
+  padding: 55px 0 100px;
   background-color: #f5f5f8;
   text-align: center;
 }
@@ -658,6 +683,12 @@ input[type="text"] {
   padding-left: 10px;
 }
 
+.btn--green:hover {
+  color: #6fc754;
+  outline: 1px solid #6fc754;
+  background-color: transparent;
+}
+
 .reviews {
   margin: 130px 0 120px;
   /* Ограничивающая оболочка */
@@ -739,7 +770,7 @@ input[type="text"] {
 
 .plan {
   background-color: #f4f4f5;
-  padding: 155px 0 190px;
+  padding: 145px 0;
 }
 
 .plan__content {
@@ -917,13 +948,10 @@ input[type="text"] {
   display: inline-block;
   text-align: center;
   font-size: 16px;
-  padding: 12px 0;
+  padding: 10px 0;
   width: 212px;
   height: 42px;
   border-radius: 21px;
-}
-
-.column__button {
   border: 1px solid #267df4;
   margin: 40px 0;
   cursor: default;
