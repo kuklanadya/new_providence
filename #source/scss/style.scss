@@ -120,6 +120,9 @@ hr {
       color: #fff;
       font-size: 16px;
    }
+   &__close:hover {
+      color: #267df4;
+   }
    &__logo {
       margin-bottom: 50px;
    }
@@ -182,19 +185,19 @@ hr {
    &__item {
       font-size: 16px;
    }
+   &__item.active {
+      color: #267df4;
+   }
    &__item:hover {
       opacity: 1;
       color: #267df4;
-   }
-   &__item--light {
-      opacity: 0.4;
    }
    .btn--blue {
       height: 42px;
       background-color: #267df4;
       border-radius: 21px;
       color: #fff;
-      padding: 8px 25px 8px 20px;
+      padding: 8px 25px 10px 20px;
       i {
          padding-right: 5px;
       }
@@ -204,7 +207,9 @@ hr {
       }
    }
    .btn--blue:hover {
-      color: #fff;
+      background-color: transparent;
+      color: #267df4;
+      outline: 1px solid #267df4;
    }
 }
 
@@ -239,6 +244,7 @@ hr {
       border: 1px solid #dcdcdd;
       border-radius: 25px;
    }
+
    &__btn__tri {
       display: inline-block;
       padding-right: 5px;
@@ -246,6 +252,13 @@ hr {
       height: 0;
       border: 5px solid transparent;
       border-left: 10px solid #26272d;
+   }
+   &__btn:hover {
+      background-color: #26272d;
+      color: white;
+   }
+   &__btn:hover &__btn__tri {
+      border-left: 10px solid white;
    }
    &__img {
       position: absolute;
@@ -285,7 +298,7 @@ hr {
 }
 
 .day {
-   padding: 125px 0 270px;
+   padding: 145px 0 240px;
    &__content {
       position: relative;
    }
@@ -317,14 +330,22 @@ hr {
          margin-left: 10px;
       }
    }
+   &__btn--blue:hover {
+      background-color: #fff;
+      color: #267df4;
+      outline: 1px solid #267df4;
+   }
    &__btn--white {
       margin-left: 20px;
       border: 1px solid #dcdcdd;
    }
+   &__btn--white:hover {
+      background-color: transparent;
+   }
 }
 
 .map {
-   padding: 205px 0;
+   padding: 175px 0;
    overflow: hidden;
    &__content {
       position: relative;
@@ -359,7 +380,7 @@ hr {
 }
 
 .interface {
-   padding: 140px 0 15px;
+   padding: 120px 0 0;
    background-color: #f5f5f8;
    text-align: center;
    &__title:after {
@@ -399,7 +420,7 @@ hr {
 }
 
 .get {
-   padding: 75px 0 130px;
+   padding: 55px 0 100px;
    background-color: #f5f5f8;
    text-align: center;
    span {
@@ -475,6 +496,11 @@ input[type="text"] {
       padding-left: 10px;
    }
 }
+.btn--green:hover {
+   color: #6fc754;
+   outline: 1px solid #6fc754;
+   background-color: transparent;
+}
 
 .reviews {
    margin: 130px 0 120px;
@@ -541,7 +567,7 @@ input[type="text"] {
 
 .plan {
    background-color: #f4f4f5;
-   padding: 155px 0 190px;
+   padding: 145px 0;
    &__content {
       display: flex;
       align-items: center;
@@ -672,12 +698,10 @@ input[type="text"] {
       display: inline-block;
       text-align: center;
       font-size: 16px;
-      padding: 12px 0;
+      padding: 10px 0;
       width: 212px;
       height: 42px;
       border-radius: 21px;
-   }
-   &__button {
       border: 1px solid #267df4;
       margin: 40px 0;
       cursor: default;
