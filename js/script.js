@@ -38,26 +38,6 @@ $(document).ready(function () {
          $('#menu').addClass("closed");
       });
    });
-   
-   //popup
-   $('.video-popup').magnificPopup({
-      type: 'iframe',
-      mainClass: 'mfp-fade',
-      removalDelay: 160,
-      preloader: false,
-      fixedContentPos: false,
-      callbacks: {
-
-         open: function () {
-            $('body').css('overflow', 'hidden');
-         },
-
-         close: function () {
-            $('body').css('overflow', '');
-         },
-
-      },
-   });
 
    //wow animations
    wow = new WOW(
