@@ -75,7 +75,7 @@ $(document).ready(function () {
    $('.plan__switch.individual').addClass('switch__active');
    $('.column.individual').addClass('column__active', 'column__individual__active');
    $('.column__button__free').addClass('column__button__active');
-   
+
    $('.plan__switcher').find('.individual').on('click', function () {
       probtn.disabled = true;
       freebtn.disabled = false;
